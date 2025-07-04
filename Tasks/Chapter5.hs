@@ -4,8 +4,8 @@ applyThrice :: (Int -> Int) -> Int -> Int
 applyThrice f x = f (f (f x))
 
 main = do
-    print (applyThrice (+1) 5)    -- Output: 8
-    print (applyThrice (*2) 1)    -- Output: 8
+    print (applyThrice (+1) 5)    
+    print (applyThrice (*2) 1)    
 
 
 HC5T2 - Filtering Odd Numbers
@@ -42,8 +42,8 @@ multiplyByFive :: Int -> Int
 multiplyByFive = (*5)
 
 main = do
-    print (multiplyByFive 6)   -- 30
-    print (multiplyByFive 10)  -- 50
+    print (multiplyByFive 6)   
+    print (multiplyByFive 10)  
 
     
 HC5T6 - Function Composition
@@ -61,7 +61,7 @@ result :: Int
 result = sum $ map (*2) $ filter (>3) [1..10]
 
 main = do
-    print result  --92
+    print result  
     
     
 HC5T8 - Point-Free Style
@@ -70,7 +70,7 @@ addFive :: Int -> Int
 addFive = (+5)
 
 main = do
-    print (addFive 10)  -- 15
+    print (addFive 10) 
 
 
 HC5T9 - Transform List with Function Applied Twice
@@ -89,8 +89,8 @@ hasSquareGreaterThan50 :: [Int] -> Bool
 hasSquareGreaterThan50 = any (>50) . map (^2)
 
 main = do
-    print (hasSquareGreaterThan50 [1, 2, 3, 10])  -- True (100)
-    print (hasSquareGreaterThan50 [1, 2, 3, 6])   -- False (max 36)
+    print (hasSquareGreaterThan50 [1, 2, 3, 10])  
+    print (hasSquareGreaterThan50 [1, 2, 3, 6])   
     
 
 
