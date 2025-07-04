@@ -36,8 +36,8 @@ rgbToHex (r, g, b) =
     in rHex ++ gHex ++ bHex
 
 main = do
-    print (rgbToHex (255, 0, 127))  -- "FF007F"
-    print (rgbToHex (0, 255, 64))   -- "00FF40"
+    print (rgbToHex (255, 0, 127)) 
+    print (rgbToHex (0, 255, 64))   
 
 
 HC3T4 - Triangle Area Using Heron’s Formula
