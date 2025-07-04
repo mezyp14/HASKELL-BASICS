@@ -1,4 +1,4 @@
-yoHC3T1 - Check if a Number is Positive, Negative, or Zero
+HC3T1 - Check if a Number is Positive, Negative, or Zero
 
 checkNumber :: Int -> String
 checkNumber n = if n > 0 then "Positive"
