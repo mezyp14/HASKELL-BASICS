@@ -1,4 +1,5 @@
 HC2T1 - Checking Types in GHCi
+
 :t 42             -- Expected: 42 :: Num a => a (or defaulted to Int)
 :t 3.14           -- Expected: 3.14 :: Fractional a => a (or Double)
 :t "Haskell"      -- Expected: "Haskell" :: [Char]
@@ -16,6 +17,7 @@ main = do
 
  
  HC2T2: Function Signatures
+ 
 add :: Int -> Int -> Int
 add x y = x + y
 
@@ -27,13 +29,14 @@ concatStrings a b = a ++ b
 
 main = do
     putStrLn "HC2T2:"
-    print (add 3 4)                   -- 7
-    print (isEven 4)                 -- True
-    print (isEven 5)                 -- False
+    print (add 3 4)                   
+    print (isEven 4)                 
+    print (isEven 5)                 
     print (concatStrings "Hi, " "There!") -- "Hi, There!"
     
 
  HC2T3: Immutable Variables
+ 
 myAge = 22 :: Int
 piValue = 3.14159 :: Double
 greeting = "Hello, Haskell!" :: String
@@ -55,14 +58,14 @@ main = do
 main = do
     putStrLn "HC2T4:"
   
-    print ((+) 5 3)          -- 8
-    print ((*) 10 4)         -- 40
-    print ((&&) True False)  -- False
+    print ((+) 5 3)          
+    print ((*) 10 4)         
+    print ((&&) True False)  
 
     
-    print (7 + 2)            -- 9
-    print (6 * 5)            -- 30
-    print (True && False)    -- False
+    print (7 + 2)            
+    print (6 * 5)            
+    print (True && False)    
     
 
 HC2T5: Functions
@@ -75,9 +78,9 @@ maxOfThree x y z = max x (max y z)
 
 main = do
     putStrLn "HC2T5:"
-    print (circleArea 5.0)          -- 78.53975
-    print (maxOfThree 4 8 2)        -- 8
-    print (maxOfThree 10 15 12)     -- 15
+    print (circleArea 5.0)          
+    print (maxOfThree 4 8 2)        
+    print (maxOfThree 10 15 12)     
     
 
 HC2T6: Int vs Integer
@@ -97,10 +100,10 @@ main = do
 
 HC2T7: Boolean Expressions
 
-bool1 = True && True       -- True
-bool2 = False || False     -- False
-bool3 = not False          -- True
-bool4 = 5 > 10             -- False
+bool1 = True && True       
+bool2 = False || False     
+bool3 = not False          
+bool4 = 5 > 10             
 
 main = do
     putStrLn "HC2T7:"
