@@ -1,3 +1,19 @@
+type Address = String
+type Value = Int
+
+generateTx :: Address -> Address -> Value -> String
+generateTx from to value = "Transaction from " ++ from ++ " to " ++ to ++ " of value " ++ show value
+
+main :: IO ()
+main = do
+    let fromAddress = "0xABC123"
+    let toAddress = "0xDEF456"
+    let amount = 100
+    let tx = generateTx fromAddress toAddress amount
+    putStrLn tx
+
+
+
 type Name = String
 type Age = Int
 
@@ -60,15 +76,4 @@ main = do
 
 
 
-data Person = Person String Int Bool deriving Show
 
-main :: IO ()
-main = do
-    let person1 = Person "Alice" 30 True
-    let person2 = Person "Bob" 25 False
-
-    putStrLn "Person 1:"
-    print person1
-
-    putStrLn "Person 2:"
-    print person2
