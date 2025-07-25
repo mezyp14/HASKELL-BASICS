@@ -1,3 +1,5 @@
+HC8T1: Type Synonyms and Basic Function
+
 type Address = String
 type Value = Int
 
@@ -14,6 +16,8 @@ main = do
 
 
 
+HC8T8: Type Synonyms and Greeting Function
+
 type Name = String
 type Age = Int
 
@@ -26,6 +30,10 @@ main = do
     let personAge = 25
     putStrLn (greet personName personAge)
 
+
+
+
+HC8T3: Algebraic Data Types and Functions
 
 
 data Shape = Circle Float | Rectangle Float Float
@@ -43,7 +51,7 @@ main = do
 
 
 
-
+HC8T10: Deriving Show for Book
 
 data Book = Book { title :: String, author :: String, year :: Int } deriving (Show)
 
@@ -58,6 +66,7 @@ main = do
     print myBook
 
 
+HC8T5: Record Syntax for Person
 
 
 data Person = Person String Int Bool deriving Show
